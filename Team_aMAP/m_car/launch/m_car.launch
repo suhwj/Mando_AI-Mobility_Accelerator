@@ -1,0 +1,14 @@
+<launch>
+  <node pkg="m_car" type="ros_m_car_control_node" name="ros_m_car_control_node" output="screen">
+  </node> 
+  
+  <node pkg="opencv_line_detection" type="ros_opencv_line_detection_node" name="ros_opencv_line_detection_node" output="screen">
+  </node> 
+  
+  
+  <node pkg="sc_mini" type="sc_mini" name="sc_mini" output="screen">
+    <param name="frame_id" type="string" value="laser_link"/>
+    <param name="port" type="string" value="/dev/sc_mini"/>
+    <param name="baud_rate" type="int" value="115200"/>
+  </node> 
+</launch>

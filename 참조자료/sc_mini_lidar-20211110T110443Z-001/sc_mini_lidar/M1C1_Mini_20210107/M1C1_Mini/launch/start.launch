@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="M1C1_Mini" type="M1C1_Mini" name="M1C1_Mini" output="screen">
+    <param name="frame_id" type="string" value="laser_link"/>
+    <param name="port" type="string" value="/dev/sc_mini"/>
+    <param name="baud_rate" type="int" value="115200"/>
+  </node>
+</launch>
